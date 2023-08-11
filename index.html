@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+  </head>
+  <body>
+    <main class="main-container">
+      <img src="./images/logo.svg" alt="splitter-logo" class="splitter-logo" />
+      <div class="calculator-container">
+        <section class="settings-container">
+          <div class="settings__bill-container">
+            <div class="label-error-container">
+              <label for="bill" class="label settings-label">Bill</label>
+              <div class="error bill-error__container"></div>
+            </div>
+            <input
+              type="text"
+              id="bill"
+              placeholder="0"
+              class="input-error"
+              onkeypress="return inputNumber(event)"
+            />
+            <img
+              src="./images/icon-dollar.svg"
+              alt="dollar-icon"
+              class="input-icon"
+            />
+          </div>
+
+          <div class="settings__tip-container">
+            <label for="tip" class="label settings-label">Select Tip %</label>
+            <div class="tip-buttons-container">
+              <button class="button tip-button tip-button--fixed" value="5">
+                5%
+              </button>
+              <button class="button tip-button tip-button--fixed" value="10">
+                10%
+              </button>
+              <button class="button tip-button tip-button--fixed" value="15">
+                15%
+              </button>
+              <button class="button tip-button tip-button--fixed" value="25">
+                25%
+              </button>
+              <button class="button tip-button tip-button--fixed" value="50">
+                50%
+              </button>
+              <div class="button tip-button">
+                <input
+                  type="text"
+                  id="tip"
+                  placeholder="Custom"
+                  onkeypress="return inputNumber(event)"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="settings__people">
+            <div class="label-error-container">
+              <label for="people" class="label settings-label"
+                >Number of People</label
+              >
+              <div class="error people-error__container"></div>
+            </div>
+
+            <input
+              type="text"
+              id="people"
+              placeholder="0"
+              onkeypress="return allowNumbersOnly(event)"
+            />
+            <img
+              src="./images/icon-person.svg"
+              alt="person-icon"
+              class="input-icon"
+            />
+          </div>
+        </section>
+
+        <section class="result-container">
+          <div class="result-details">
+            <div class="result__item-container">
+              <div class="label result-label">
+                Tip Amount <span class="per-person-label">/ person</span>
+              </div>
+              <div class="result-number tip-per-person__container">$0.00</div>
+            </div>
+            <div class="result__item-container">
+              <div class="label result-label">
+                Total <span class="per-person-label">/ person</span>
+              </div>
+              <div class="result-number total-per-person__container">$0.00</div>
+            </div>
+          </div>
+
+          <button class="button reset-button" disabled>Reset</button>
+        </section>
+      </div>
+    </main>
+
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a href="https://www.frontendmentor.io/profile/RoksolanaVeres"
+        >Roksolana Veres</a
+      >.
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
