@@ -270,4 +270,8 @@ input[type="text"]::placeholder {
     flex-direction: column;
     justify-content: space-between;
   }
+
+  .result-number {
+    font-size: 4rem;
+  }
 }

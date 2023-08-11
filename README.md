@@ -31,9 +31,9 @@ Users should be able to:
 
 ### Links
 
-- [Frontend Mentor solution](https://www.frontendmentor.io/solutions/advice-generator-app-using-fetch-0xl0lB37p_)
-- [GitHub repo](https://github.com/RoksolanaVeres/Advice-generator_app)
-- [Live Site](https://roksolanaveres.github.io/Advice-generator_app/)
+- [Frontend Mentor solution](https://www.frontendmentor.io/solutions/responsive-tip-calculator-app-Dgneqi3k7t)
+- [GitHub repo](https://github.com/RoksolanaVeres/tip-calculator-app)
+- [Live Site](https://roksolanaveres.github.io/tip-calculator-app/)
 
 ## My process
 
